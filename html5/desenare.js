@@ -31,7 +31,7 @@ function start() {
 
     //fir de executie
     //calculam separat numere prime si le afisam in desenare.html
-	if (my_worker == null{
+	if (my_worker == null){
 		my_worker = new Worker("calcul_prime.js");
 		my_worker.onmessage = function(e) {
 			document.getElementById("id_prime").innerHTML = e.data;
