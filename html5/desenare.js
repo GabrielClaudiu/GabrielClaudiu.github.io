@@ -29,11 +29,11 @@ function start() {
     document.getElementById("id_start_button").disabled = true;
     document.getElementById("id_stop_button").disabled = false;
 
-    //fir de executie
-    //calculam separat numere prime si le afisam in desenare.html
-	if (my_worker == null){
+	if (my_worker == null)
+	{
 		my_worker = new Worker("calcul_prime.js");
-		my_worker.onmessage = function(e) {
+		my_worker.onmessage = function(e) 
+		{
 			document.getElementById("id_prime").innerHTML = e.data;
 		}
 	}
@@ -41,7 +41,6 @@ function start() {
 		my_worker.postMessage("start");
 
     id_timer = setInterval(deseneaza_cerc, 10, unghi_start, context, canvas.width, canvas.height);
-
 }
 
 function stop() {
