@@ -4,7 +4,7 @@ window.addEventListener("deviceorientation", on_device_orientation);
 window.addEventListener("devicemotion", on_device_motion);
 
 //--------------------------------------------------
-function on_device_orientation(e);
+function on_device_orientation(e)
 {
 	document.getElementById("id.alpha").innerHTML = e.alpha;
 	document.getElementById("id.beta").innerHTML = e.beta;
@@ -21,7 +21,7 @@ function on_device_orientation(e);
 	context.stroke();
 }
 //--------------------------------------------------
-function on_device_motion(e);
+function on_device_motion(e)
 {
 	document.getElementById("id_acc_z").innerHTML = e.accelerationIncludingGravity.z;
 	document.getElementById("id_acc_x").innerHTML = e.accelerationIncludingGravity.x;
