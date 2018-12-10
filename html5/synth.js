@@ -17,7 +17,7 @@ function speak()
 {
 	var utterance = new SpeechSynthesisUtterance();
 	utterance.lang = "en-US";
-	uttrance.text = document.getElementById("id_text").value;
+	utterance.text = document.getElementById("id_text").value;
 	
 	synth.speak(utterance);
 }
